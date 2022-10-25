@@ -1,0 +1,38 @@
+﻿ @page
+@model WebApplication7.Pages.Tasks.IndexModel
+@{
+}
+<br />
+<h2>list of tasks</h2>
+<br/>
+@*button to add new task*@
+<a class="btn btn-primary btn-sm" href="/Tasks/Insert">Add task</a>
+<br/>
+<br/>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>description</th>
+            <th>employee</th>
+        </tr>
+    </thead>
+    <tbody>
+        @*show info of each task*@
+        @foreach (var item in Model.listTasks)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.t_name</td>
+                <td>@item.description</td>
+                <td>@item.em_name</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Tasks/Edit?id=@item.id">Edit task</a>@*for task's edeting*@
+                    <a class="btn btn-primary btn-sm" href="/Tasks/Delete?id=@item.id">Delete task</a>@*for task's deletion*@
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

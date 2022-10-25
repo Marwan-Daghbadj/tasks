@@ -1,0 +1,23 @@
+﻿@page
+@model WebApplication7.Pages.Employee.InsertModel
+@{
+}
+<br>
+<h2>Add Task</h2>
+@*form allow admin to add employee*@
+<form method="post">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Employee name</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="name" value="" required />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3">
+            <a class="btn btn-outline-primary " href="/" role="button">Cancel</a>
+        </div>
+    </div>
+</form>

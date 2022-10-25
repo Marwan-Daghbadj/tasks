@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Tlog</_PublishTargetUrl>
+    <History>True|2022-10-25T10:09:29.9103489Z;True|2022-10-25T14:09:20.0362877+04:00;True|2022-10-25T12:50:29.4554049+04:00;True|2022-10-25T12:50:09.5012062+04:00;True|2022-10-25T03:08:28.5967004+04:00;</History>
+  </PropertyGroup>
+</Project>

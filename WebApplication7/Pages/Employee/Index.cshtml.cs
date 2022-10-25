@@ -19,7 +19,6 @@ namespace WebApplication7.Pages.Tasks
             try
             {
                 //get connection from configuration file
-                //
                 string connectionString = ConfigurationManager.ConnectionStrings["mycon"].ConnectionString;
                 //connecting ...
                 IDbConnection connection = new SqlConnection(connectionString);

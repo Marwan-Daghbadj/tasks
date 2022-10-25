@@ -1,0 +1,28 @@
+﻿@page
+@model WebApplication7.Pages.Tasks.employeeModel
+@{
+}
+<br />
+<h2>list of emplpyee</h2>
+<br />
+<a class="btn btn-primary btn-sm" href="/Employee/Insert">Add Emplyee</a>@*button allows admin to add employee*@
+<br />
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+    </thead>
+    <tbody>@*show list of employee*@
+        @foreach (var item in Model.listEmplyee)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.em_name</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
